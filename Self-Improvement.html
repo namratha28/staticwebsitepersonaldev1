@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+<style>
+.box-scene {
+    -webkit-perspective: 700;
+    width: 575px;
+    height: 396px;
+    margin-bottom:80px;
+    float:left;
+    z-index: 999;
+   
+}
+.box-scene:hover .box {
+    -webkit-transform: rotateY(-90deg);
+}
+.box {
+    width: 575px;
+    height: 396px;
+    position: relative;
+    
+    -webkit-transform-style: preserve-3d;
+    
+    -webkit-transition: all 0.4s ease-out;
+    -webkit-transform-origin: 90px 90px -90px;
+    
+    /* float: left; */
+      
+    
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: visible; 
+    
+    -webkit-transform-origin: 0 0;
+}
+.front {
+    -webkit-transform: rotateY(0deg);
+    z-index: 2;
+    background: #d9d9d9;
+}
+.side {
+    background: black;
+    -webkit-transform: rotateY(90deg);
+    z-index: 1;
+    left:180px;	    
+     padding:15px;
+      color:white;
+}
+
+div.title{
+border-style: outset;
+}  
+
+div.title{
+background-image: url("image1.jpg");
+background-size:1350px 650px;
+height:650px;
+border:0px;
+margin-bottom:80px;
+
+
+}
+h1{
+font-size:50px;
+font-weight:bold;
+text-align:center;
+border:0px;
+padding:0px;
+margin:0;
+right:30%;
+top:10%;
+text-shadow: 2px 2px 4px #000000;
+
+}   
+
+header{
+
+  position:absolute;
+   left:95%;
+   top:5%;
+    transform:translate3d(0px,-50%,0px);
+}
+p.title{
+background-color:;
+border:0px;
+padding:0px;
+margin:0;
+font-size:30px;
+width:500px; 
+    font-family: "quatro-extra-light";
+    text:black;
+left:10%;
+top:10%;   
+}
+nav{
+   opacity:0.8;
+   position:absolute;
+   left:0%;
+  top:50%;
+    transform:translate3d(0px,-50%,0px);
+ }
+a{
+font-family:"freight-big-pro",serif;
+font-weight:bold;
+font-size:30px;
+
+}
+img{
+width:575px;
+height:396px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color:#4CAF50;
+
+    color: white; 
+    border: 2px solid #4CAF50;
+}
+
+.button2 {
+    background-color: #008CBA; 
+    color: white; 
+    border: 2px solid #008CBA;
+}
+
+
+
+.button3 {
+    background-color: #f44336; 
+    color: white; 
+    border: 2px solid #f44336;
+}
+
+.button4 {
+    background-color: #e7e7e7;
+    color: white;
+    border: 2px solid #e7e7e7;
+}
+
+
+
+.button5 {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+}
+
+
+
+</style>
+
+<body>
+<div class="title">
+<p  class="title w3-card-8"><i> “No matter who you are, no matter what you did,<br> no matter where you've come from, you can always change,<br> become a better version of yourself.”</i></p>
+<h1 class=" w3-text-white w3-animate-top" >self <br>improvment<br>tips</h1>
+
+</div>
+
+<header >
+  <span class="w3-opennav w3-text-black w3-xlarge" onclick="w3_open()">&#9776;</span>
+</header>
+<nav class="w3-sidenav w3-white w3-card-2" style="display:none;line-height:3;background-image:url("selfimp.jpg");">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-large" style="text-align:center;">Close &times;</a>
+  <a href="frameproj.html" style="text-align:center;">self defence</a>		
+  <a href="proj5.html" style="text-align:center;">health  and fitness</a>		
+  <a href="tips.html" style="text-align:center;">self employement</a>		
+  <a href="Self-Improvement.html" style="text-align:center;">self improvement</a>		
+  		
+</nav>
+
+
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='stopwastingtime.png' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Stop Wasting Time
+
+</center></b>
+<i>"
+
+I bet you could easily carve out a few hours in your day to learn a new skill. It’s all about shifting things around. Most notably, stop watching so much TV! Studies show that too much TV watching is harmful to our health.
+
+How do you stop watching so much TV? For some, you will have to take drastic measures, like canceling your cable. For others, delaying the show works. Delaying is what works for.
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button1"><center>stop wasting time</center></button>
+
+</div>
+
+
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='read.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Read
+</center></b>
+<i>"
+
+
+Reading stimulates the mind. Do you know how many books I read last year? Zero. That falls in line with the numbers from 2012 that show 29% of Americans read 2 or less books. This year, I’ve read 4. Granted, 2 were while on my honeymoon. How do I find the time to read? Simple. I turn off the TV 30 minutes before bed and read. I don’t miss anything important on TV and it helps me to prepare for a good night’s sleep.
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button2"><center>read</center></button>
+</div>
+
+
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='meditation1.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Meditate
+</center></b>
+<i>"
+
+
+
+
+Along with learning new skills and reading, you should fill up you new found free time by meditating for 10 minutes per day. Some may think that meditating is a waste of time, but I find that clearing my head of all of my thoughts and just being present has a huge effect on my mood and happiness.
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button3"><center>medidate</center></button>
+</div>
+
+
+</div>
+
+
+
+
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='mentor.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Find A Mentor
+</center></b>
+<i>"
+
+
+We all have those we look up to. Find a mentor who is successful at what you want to do and to learn from them. Many successful people are more than willing to help out those who ask for help and are happy to take you under their wing.
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button4"><center>fina a mentor</center></button>
+</div>
+
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='acceptpast.png' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Accept The Past
+</center></b>
+<i>"
+
+
+Along the same lines of accepting change is also learning to accept the past. What is done is done. Nothing you can do now will ever change the past. It’s part of history. The only thing you can do is learn from the experience and move on, push forward. Forgive and move forward. If you can’t learn to do that, you will never become the best person you can be. You will be focusing on the wrong things.
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button5"><center>accept the past</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='Surround-Yourself-With-Positive-People.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Surround Yourself With Positive People
+
+
+
+</center></b>
+<i>"
+
+The old saying, “you are the company that you keep”, is true. If you are always hanging around with unmotivated people, you too will be unmotivated to succeed in life. On the other hand, if you hang around with successful people, you too will find success.
+
+
+
+Are there people in your life you would be better off no longer spending time with?
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button5"><center>surround with positive people</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='negativethoughts.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Deal With Negative Thoughts And Emotions
+</center></b>
+<i>"
+
+
+I mentioned in a previous tip about learning to love yourself. You will always have critics, including yourself. You need to learn to deal with any negative thoughts and emotions you have. At first, you may find this difficult to do. But over time, controlling your thoughts will become easier
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button1"><center>negative thoughts</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='acceptchange.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Accept Change
+</center></b>
+<i>"
+
+
+Part of pushing through tough times is all about accepting change. Nothing in life is forever. Things are constantly changing – we age every day, the seasons change every 3 months. It’s part of life. The sooner you can accept that change happens, the sooner you can begin to be the best you possible
+
+
+"</i>
+</p>
+        </div>
+    </div>
+
+<button class="button button2"><center>accept change</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='pushthroughtoughtimes1.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Push Through Tough Times
+</center></b>
+<i>"
+
+
+
+You will fail. You will struggle. Life will be hard sometimes. But you have to keep pushing through. This builds character. When you push through a hard time, the next hard time you encounter will be easier to get through. Why? Because you proved to yourself that you can get through anything. That belief is a huge part of self improvement.
+
+"</i>
+</p>
+        </div>
+    </div>
+
+<button class="button button3"><center>Push Through Tough Times</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='luvyour2.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Love Yourself</center></b>
+
+<i>"The first self improvement tip is learning to love yourself. You have to learn to accept who you are and that you are beautiful just the way you are. You are supposed to simply be you.
+
+
+All throughout our daily lives we have others put us down for who we are or what we believe in. They are against you; you need to be for you. If you are against you, there is no hope of living an amazing life. Why give others the power over you?
+
+Tell yourself how special you are every day.  Learn to recognize what talents and qualities you have that are special. we are all special in our own way."</i>
+</p>
+        </div>
+    </div>
+<button class="button button4"><center>love yourself</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='exercise.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Exercise</b></center>
+
+<i>"I make it a point to exercise a few times a week. When I do, I feel great. Working up a sweat and moving weights makes me feel good about myself and improves my mood. Not surprisingly, when I am busy and can’t make it to the gym, I find I am less motivated in general and my mood sours.
+
+
+When you lift heavy weights, your body exerts more effort and you release more hormones into your system. This is what makes you feel better and improves your mood.With this said, if you are brand new to lifting weights, definitely go light to start so that you don’t injure yourself".</i></p>
+        </div>
+    </div>
+
+<button class="button button5"><center>exercises</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='eatbetter.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center> Eat Better    </center></b>
+<i>"
+
+If you are going to work out, you might as well eat well too, right? I find when I am working out, I eat better. When I stop working out, I eat poorly. It’s a simple cycle really. I lift weights, I feel good about myself, I eat well and the cycle repeats.
+
+Motivation Cycle
+
+Most times you are feeling like crap because you are eating highly processed, sugary foods. Try to eat healthy just for a week. Limit your sugar intake and eat more natural foods – fruits and vegetables. The first day or so might be hard, but give your body time to adjust and you will be amazed.
+
+"</i></p>
+        </div>
+    </div>
+</div>
+
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='changeyourhabits.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Change Your Habits
+
+</center></b>
+<i>"
+We are all creatures of habit. We follow the same routines, day in, day out. This makes life easier for us, but also makes us lazy. To spice things up, change your habits. I’m not talking about refraining from brushing your teeth, but maybe brush with the opposite hand.
+
+Instead of taking the same way to work every day, try a new way. Make Tuesday nights family nights. Find simple ways to change things up in life.
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button1"><center>change your habits</center></button>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='setgoals.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Set Goals
+
+</center></b>
+<i>"
+While you change your habits, you should also focus on setting goals for yourself. Where do you want to be in one year, or three or five years? Don’t just write them down, but visualize these goals. Make the goals a part of you.
+
+I have some long term goals for myself. I’ve gotten so good at visualizing them that I can see specific details, like blades of grass when I close my eyes and think of the house and yard I want to own. Don’t get upset if you can’t do this right away. Start small and just begin to visualize.
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button2"><center>set goals</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='acceptfailure1.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Accept Failure
+</center></b>
+<i>"
+
+You are going to fail many times in life. Failing is OK. In fact, you should embrace failure. When you stretch beyond your comfort zone, you are growing as a person. It is only natural that you will fail. Don’t fall for the lie that failing is bad.
+
+Think about failing like this: As a toddler, we have to learn to walk. If you ever watch a toddler learning to walk, she falls down many, many times. In other words, she fails countless times. Why is a child failing to learn to walk OK but you failing to learn a new skill as an adult a bad thing? At the end of the day it is still failure.It is only a bad thing if you never learn from it. Fail, learn and grow.
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button3"><center>accept failure</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='missionstatement.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Create A Mission Statement
+</center></b>
+<i>"
+
+ You need to know who you are and what you stand for. In other words, you need to create a personal mission statement. Don’t mull over creating the perfect mission statement here. Just come up with something that identifies who you are and what you are about. As time goes on, you can modify it.
+
+My mission statement talks about being a healthy person that always looks for the positive in life. Again, nothing complicated and there is room for improvement – just like with life.
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button4"><center>create a mission statement</center></button>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='bethankful.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Be Thankful
+</center></b>
+<i>"
+
+
+You need to be thankful for all that you have. Why are so many people living in debt? Because they are chasing happiness. They think that happiness comes from things. They don’t realize that happiness comes from within.
+
+It’s the same with the quote “success leads to happiness”. It doesn’t. Happiness leads to success. Be happy with all that you have. Odds are you have it better than the majority of people:
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button5"><center>be thankful</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='learnanewskills.jpg' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Learn A New Skill
+</center></b>
+<i>"
+
+
+Learning a new skill breeds confidence in ourselves. When we learn something new, we get excited and are eager to learn more. So what is it that you have always wanted to learn but always put off? Write a short list of things and then start working on learning those new skills.
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button1"><center>learn a new skill</center></button>
+</div>
+</div>
+<div class='box-scene'>
+    <div class='box'>
+        <div class='front face'>
+            <img src='reflect.png' alt=''>
+        </div>
+        <div class="side face">
+            <p><b><center>Reflect
+</center></b>
+<i>"
+
+
+At the end of the day, reflect on what happened. Was it a good day? Even if bad things happened, find ways to spin them into something positive. In other words, don’t let the negative thoughts take root in your mind. Be thankful for all that happened to you today and vow to be an even better person tomorrow
+
+
+"</i>
+</p>
+        </div>
+    </div>
+<button class="button button2"><center>reflect</center></button>
+</div>
+</div>
+
+
+<script>
+function w3_open() {
+ 
+  document.getElementsByClassName("w3-sidenav")[0].style.width = "100%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  
+}
+function w3_close() {
+  
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  
+}
+</script>
+
+
+
+</body>
+</html> 

@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+body{
+background-color:grey;
+color:white;
+}
+h1{
+text-align:center;
+font-size:55px;
+padding:30px;}
+
+header{
+
+  position:absolute;
+   left:95%;
+top:5%;
+    transform:translate3d(0px,-50%,0px);
+}
+nav{
+
+  position:absolute;
+   left:0%;
+top:50%;
+    transform:translate3d(0px,-50%,0px);
+ }
+a{
+font-family:"freight-big-pro",serif;
+font-weight:bold;
+font-size:25px;
+
+}
+</style>
+</head>
+<body>
+
+<h1>HEALTH AND FITNESS</h1>
+
+<nav class="w3-sidenav w3-white w3-card-2" style="display:none;line-height:3;">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-large" style="text-align:center;">Close &times;</a>
+  <a href="frameproj.html" style="text-align:center;" target="_blank">self defence</a>		
+  <a href="proj5.html" style="text-align:center;" target="_blank">health  and fitness</a>		
+  <a href="tips.html" style="text-align:center;" target="_blank">self employement</a>		
+  <a href="Self-Improvement.html" style="text-align:center;" target="_blank">self improvement</a>		
+  		
+</nav>
+<header >
+  <span class="w3-opennav w3-text-aqua w3-xlarge" onclick="w3_open()">&#9776;</span>
+</header>
+
+<script>
+function w3_open() {
+ 
+  document.getElementsByClassName("w3-sidenav")[0].style.width = "100%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  
+}
+function w3_close() {
+  
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  
+}
+</script>
+</body>
+</html>

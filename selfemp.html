@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+<style>
+div.title{
+border-style: outset;
+}  
+
+div.title{
+background-image: url("http://paladininc.com/wp-content/uploads/2015/02/up-is-us-home1.jpg");
+background-size:750px 650px;
+height:650px;
+border:0px;
+padding:0px;
+margin:0;
+float:right;
+}
+h1{
+font-size:80px;
+ font-family: "Gotham Pro",roboto;
+font-weight:bold;
+text-align:center;
+border:0px;
+padding:0px;
+margin:0;
+left:30%;
+top:10%;
+text-shadow: 2px 2px 4px #000000;
+}   
+
+header{
+
+  position:absolute;
+   left:95%;
+   top:5%;
+    transform:translate3d(0px,-50%,0px);
+}
+p{
+background-color:;
+border:0px;
+padding:0px;
+margin:0;
+font-size:30px;
+width:500px; 
+    font-family: "quatro-extra-light";
+    text:white;
+left:10%;
+top:10%;   
+}
+nav{
+   opacity:0.8;
+   position:absolute;
+   left:0%;
+  top:50%;
+    transform:translate3d(0px,-50%,0px);
+ }
+a{
+font-family:"freight-big-pro",serif;
+font-weight:bold;
+font-size:30px;
+
+}
+img.second{
+top:400px;
+left:400px;
+transform:translate3d(5px,25%,0px);
+}
+</style>
+
+<body>
+<div class="title">
+<p class="w3-card-8"><i> if u don't build your dreams,<br> someone will hire u to help build theirs</i></p>
+<h1 class=" w3-text-white w3-animate-top" >self <br>employment</h1>
+
+</div>
+
+<header >
+  <span class="w3-opennav w3-text-black w3-xlarge" onclick="w3_open()">&#9776;</span>
+</header>
+<p style="float:left;"><i> if u don't build your dreams,<br> someone will hire u to help build theirs</i></p>
+
+<div class="image w3-display-container w3-animate-left" >
+<a href=""><img src="y.png" class="w3-circle w3-card-4" style="width:45%"></a>
+
+<a href=""><img src="story.jpg" class="second w3-circle w3-card-4" style="width:45%"></a>
+</div>
+<div class="image w3-display-container w3-animate-left" >
+<a href=""><img src="y.png" class="w3-circle w3-card-4" style="width:45%"></a>
+
+<a href=""><img src="story.jpg" class="second w3-circle w3-card-4" style="width:45%"></a>	
+</div>
+
+<nav class="w3-sidenav w3-white w3-card-2" style="display:none;line-height:3;">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-large" style="text-align:center;">Close &times;</a>
+  <a href="frameproj.html" style="text-align:center;">self defence</a>		
+  <a href="proj3.html" style="text-align:center;">health  and fitness</a>		
+  <a href="#" style="text-align:center;">self employement</a>		
+  <a href="#" style="text-align:center;">self improvement</a>		
+  		
+</nav>
+
+<script>
+function w3_open() {
+ 
+  document.getElementsByClassName("w3-sidenav")[0].style.width = "100%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  
+}
+function w3_close() {
+  
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  
+}
+</script>
+
+
+
+</body>
+</html> 
